@@ -1,6 +1,12 @@
 import xlrd
 from layout import ComboScreen, AreaScreen, ResultScreen
-from functions import formatAverageCode, getAvgCost
+from functions import formatAverageCode, getAvgCost, updateSpreadsheet, updateINCC
+
+# Updating multipliers spreadsheet...
+updateSpreadsheet()
+
+# Updating INCC spreadsheet...
+updateINCC()
 
 # Opening required spreadsheet for the code
 workbook = xlrd.open_workbook('custo_concorrentes.xlsx')
